@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Логин -->
+            <EditText
+                android:id="@+id/editTextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Логин"
+                android:inputType="textPersonName" />
+
+            <!-- Пароль -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                android:layout_marginTop="8dp" />
+
+            <!-- Фамилия -->
+            <EditText
+                android:id="@+id/editTextSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Фамилия"
+                android:inputType="textPersonName"
+                android:layout_marginTop="8dp" />
+
+            <!-- Имя -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Имя"
+                android:inputType="textPersonName"
+                android:layout_marginTop="8dp" />
+
+            <!-- Отчество -->
+            <EditText
+                android:id="@+id/editTextPatronymic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Отчество"
+                android:inputType="textPersonName"
+                android:layout_marginTop="8dp" />
+
+            <!-- Номер телефона -->
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Номер телефона"
+                android:inputType="phoneNumber"
+                android:layout_marginTop="8dp" />
+
+            <!-- Кнопки регистрации и возврата -->
+            <LinearLayout
+                android:id="@+id/buttonContainer"
+
+            <!-- Зарегистрироваться -->
+            <Button
+                android:id="@+id/buttonRegister"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Зарегистрироваться"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:marginTop="16dp">/>
+
+            <!-- Вернуться назад -->
+            <Button
+                android:id="@+id/buttonBack"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text= "Вернуться назад"
+                android:textSize= "16sp"
+                android:layout_weight= "1"
+                android:gravity="center_horizontal"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:marginTop="16dp">
+            />
+        </LinearLayout>
+
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
